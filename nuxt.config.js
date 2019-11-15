@@ -1,13 +1,17 @@
 const webpack = require('webpack')
 const pkg     = require('./package')
 
+require('dotenv').config()
 module.exports = {
   mode: 'universal',
   head: {
     title: pkg.name,
     meta : [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        name   : 'viewport',
+        content: 'width=device-width, initial-scale=1',
+      },
       {
         hid    : 'description',
         name   : 'description',
@@ -20,7 +24,10 @@ module.exports = {
         type: 'image/x-icon',
         href: '/favicon.ico',
       },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' },
+      {
+        rel : 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700',
+      },
     ],
   },
   loading: { color: '#fff' },
@@ -39,7 +46,10 @@ module.exports = {
     ['@nuxtjs/moment', { plugin: false }],
     ['bootstrap-vue/nuxt', { css: false }],
   ],
-  axios: { browserBaseURL: '/api', proxy: false },
+  axios: {
+    browserBaseURL: '/api',
+    proxy         : false,
+  },
   // proxy: {
   //   '/api': {
   //     target     : process.env.API_URL,
@@ -63,6 +73,11 @@ module.exports = {
         },
       },
     },
-    plugins: [new webpack.ProvidePlugin({ $: 'jquery', jQuery: 'jquery' })],
+    plugins: [
+      new webpack.ProvidePlugin({
+        $     : 'jquery',
+        jQuery: 'jquery',
+      }),
+    ],
   },
 }

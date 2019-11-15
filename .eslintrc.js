@@ -13,10 +13,27 @@ module.exports = {
   globals: {
     $: true,
   },
-  overrides: [
-    {
-      files: ['pages/**/*.vue', 'layouts/**/*.vue'],
-      rules: { 'unicorn/filename-case': ['error', { case: 'camelCase' }] },
-    }
-  ]
+  rules: {
+    'unicorn/prevent-abbreviations': ['error',
+      {
+        checkProperties: false,
+        checkShorthandProperties: false,
+        whitelist: {
+          getErrMsg: true,
+        }
+      }
+    ],
+    'vue/html-closing-bracket-newline': ['error', {
+      'singleline': 'never',
+      'multiline': 'never',
+    }],
+  },
+  overrides: [{
+    files: ['pages/**/*.vue', 'layouts/**/*.vue'],
+    rules: {
+      'unicorn/filename-case': ['error', {
+        case: 'kebabCase'
+      }]
+    },
+  }]
 }
