@@ -11,50 +11,42 @@
             :label-cols="3"
             horizontal
             label-size="md"
-            label="Per Page"
-          >
+            label="Per Page">
             <b-col
               md="6"
-              lg="6"
-            >
+              lg="6">
               <b-form-select
                 v-model="params.limit"
-                :options="pageOptions"
-              />
+                :options="pageOptions" />
             </b-col>
           </b-form-group>
         </b-col>
         <b-col md="6">
           <b-input-group
-            horizontal
-          >
+            horizontal>
             <b-col
               md="4"
-              class="text-right p-1"
-            >
+              class="text-right p-1">
               Select Date
             </b-col>
             <b-col md="4">
               <datepicker
                 v-model="range.start"
                 bootstrap-styling
-                format="dd MMM yyyy"
-              />
+                format="dd MMM yyyy" />
             </b-col>
             <b-col md="4">
               <datepicker
                 v-model="range.end"
                 bootstrap-styling
-                format="dd MMM yyyy"
-              />
+                format="dd MMM yyyy" />
             </b-col>
           </b-input-group>
         </b-col>
         <b-col md="2">
           <b-button
             size="sm"
-            variant="warning btn-block"
-          >
+            variant="warning btn-block">
             Export
           </b-button>
         </b-col>
@@ -70,8 +62,7 @@
                 </b-input-group-text>
                 <b-form-select
                   v-model="params.limit"
-                  :options="pageOptions"
-                />
+                  :options="pageOptions" />
               </b-input-group>
             </b-col>
             <b-col md="4">
@@ -105,8 +96,7 @@
       </b-row>
       <b-table
         :items="items"
-        hover
-      />
+        hover />
     </b-card>
   </div>
 </template>

@@ -23,23 +23,20 @@
               </b-input-group-text>
               <b-form-input
                 type="password"
-                placeholder="Enter Your Password"
-              />
+                placeholder="Enter Your Password" />
             </b-input-group>
           </b-form-group>
 
           <b-button
             variant="outline-primary btn-block btn-lg"
             class="mt-4 mb-2"
-            @click="submit"
-          >
+            @click="submit">
             SIGNIN
           </b-button>
 
           <a
             href="#"
-            class="font-small font-asphalt"
-          >Forgot your password?</a>
+            class="font-small font-asphalt">Forgot your password?</a>
         </b-form> <!-- END: FORM-->
       </div>
     </div>
