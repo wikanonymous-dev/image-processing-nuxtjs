@@ -15,13 +15,15 @@
 </template>
 
 <script>
-import Navbar from '@/components/navbar/Navbar.vue'
-import Sidebar from '@/components/Sidebar.vue'
-import Breadcrumb from '@/components/Breadcrumbs.vue'
+import Navbar from "@/components/navbar/Navbar.vue";
+import Sidebar from "@/components/Sidebar.vue";
+import Breadcrumb from "@/components/Breadcrumbs.vue";
 
 export default {
   components: {
-    Navbar, Sidebar, Breadcrumb,
-  },
-}
+    Navbar,
+    Sidebar,
+    Breadcrumb
+  }
+};
 </script>

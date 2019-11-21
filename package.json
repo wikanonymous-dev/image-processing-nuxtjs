@@ -16,9 +16,6 @@
     "fix:js": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "fix:css": "stylelint 'assets/**/*.scss' --syntax scss --fix"
   },
-  "precommit": [
-    "lint"
-  ],
   "dependencies": {
     "@nuxtjs/axios": "^5.5.4",
     "@nuxtjs/dotenv": "^1.3.0",
@@ -28,6 +25,7 @@
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.27",
     "cross-env": "^5.2.0",
+    "d3": "^5.14.2",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "jquery": "^3.4.1",
