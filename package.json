@@ -54,7 +54,7 @@
     "nodemon": "^1.19.1",
     "pre-commit": "^1.2.2",
     "sass-loader": "^7.1.0",
-    "stylelint": "^10.1.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-sass-guidelines": "^6.0.0",
     "stylelint-scss": "^3.9.2"
   }
